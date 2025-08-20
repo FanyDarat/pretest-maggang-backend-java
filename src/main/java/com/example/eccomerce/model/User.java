@@ -14,12 +14,6 @@ public class User {
     private String password;
     private LocalDateTime createdAt = LocalDateTime.now();
 
-    @OneToMany(mappedBy = "user")
-    private List<Cart> carts;
-
-    @OneToMany(mappedBy = "user")
-    private List<Transaction> transactions;
-
     public User() {}
 
     public Long getId() { return id; }

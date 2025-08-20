@@ -28,10 +28,6 @@ public class UserService {
                 .orElse(false);
     }
 
-    public Optional<User> findByName(String name) {
-        return repository.findByName(name);
-    }
-
     public Iterable<User> getAllUsers() {
         return repository.findAll();
     }
